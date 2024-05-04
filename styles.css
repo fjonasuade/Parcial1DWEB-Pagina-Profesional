@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+}
+
+header {
+    background-color: #FFCFCF; /* Establecemos el color de fondo */
+    padding: 20px; /* Añadimos un poco de espacio interno */
+    text-align: center; /* Centramos el texto */
+    color: black; /* Cambiamos el color del texto para que sea legible */
+}
+
+body {
+    background-color: white; /* Gradiente de blanco a gris claro */
+}
+
+.imagen-arriba-izquierda {
+    position: absolute; /* Posicionamos la imagen de forma absoluta */
+    top: 20px; /* Distancia desde la parte superior */
+    left: 20px; /* Distancia desde el lado izquierdo */
+    width: 100px; /* Anchura deseada del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+nav ul {
+    list-style-type: none; /* Quitamos los estilos de la lista */
+    margin: 0; /* Quitamos el margen por defecto */
+    padding: 0; /* Quitamos el relleno por defecto */
+}
+.contenedor {
+    display: flex; /* Usamos flexbox */
+    flex-wrap: wrap; /* Permitimos que las fotos se envuelvan en filas */
+    justify-content: center; /* Centramos las fotos horizontalmente */
+    gap: 10px; /* Espacio entre las fotos */
+    max-width: 1200px; /* Máximo ancho del contenedor */
+    margin: 0 auto; /* Centramos el contenedor en la página */
+}
+
+.descripcion-servicios {
+    text-align: center; /* Centramos el texto */
+    font-size: 1em; /* Tamaño de fuente */
+    line-height: 1.5; /* Altura de línea */
+    color: #000000; /* Color de texto */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.descripcion-servicios img {
+    float: center; /* Alinear la imagen a la izquierda */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+
+}
+.titulodescripcion-servicios{
+    text-align: center; /* Centramos el texto */
+    font-size: 25px; /* Tamaño de fuente */
+    line-height: 1.5; /* Altura de línea */
+    color: #000000; /* Color de texto */
+    margin-top: 20px; /* Espacio superior */
+    font-family: "Arial", sans-serif;
+}
+.foto {
+    width: calc(50% - 5px); /* Calculamos el ancho de cada foto */
+    overflow: hidden; /* Ocultamos cualquier parte de la imagen que se desborde */
+    border-radius: 10px; /* Añadimos bordes redondeados a las imágenes */
+}
+
+.foto img {
+    width: 100%;
+    max-height: 45rem; /* Hacemos que la imagen ocupe todo el ancho del contenedor */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Agregamos una transición suave al pasar el mouse sobre la imagen */
+}
+
+.foto:hover img {
+    transform: scale(1.1); /* Aumentamos ligeramente el tamaño de la imagen al pasar el mouse sobre ella */
+}
+nav ul li {
+    display: inline; /* Mostramos los elementos de la lista en línea */
+    margin-right: 20px; /* Añadimos un margen a la derecha entre los elementos */
+    margin-left: 0.2pc;
+    margin-right: 0.2pc;
+}
+
+nav ul li a {
+    text-decoration: none; /* Quitamos la subrayado de los enlaces */
+    color: black; /* Color del texto */
+    margin-left: 0.2pc;
+    margin-right: 0.2pc;
+}
+footer {
+    background-color: #46CAF7; /* Establecemos el color de fondo */
+    padding: 20px; /* Añadimos un poco de espacio interno */
+    text-align: center; /* Centramos el texto */
+    color: black; /* Cambiamos el color del texto para que sea legible */
+    width: 100%; /* Hacemos que el ancho sea del 100% para que ocupe todo el ancho de la ventana */
+    bottom: 0; /* Lo situamos al fondo de la ventana */
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        background-color: #FFCFCF; /* Establecemos el color de fondo */
+        padding: 20px; /* Añadimos un poco de espacio interno */
+        text-align: center; /* Centramos el texto */
+        
+    }
+    .titulo{
+        color: red;
+    }
+    body {
+        background-color: white; /* Gradiente de blanco a gris claro */
+    }
+    
+    .imagen-arriba-izquierda {
+        position: absolute; /* Posicionamos la imagen de forma absoluta */
+        top: 10px; /* Distancia desde la parte superior */
+        left: 10px; /* Distancia desde el lado izquierdo */
+        width: 5pc; /* Anchura deseada del logo */
+        height: 5pc; /* Altura automática para mantener la proporción */
+    }
+    nav ul {
+        list-style-type: none; /* Quitamos los estilos de la lista */
+        margin: 0; /* Quitamos el margen por defecto */
+        padding: 0; /* Quitamos el relleno por defecto */
+    }
+    .contenedor {
+        display: flex; /* Usamos flexbox */
+        flex-wrap: wrap; /* Permitimos que las fotos se envuelvan en filas */
+        justify-content: center; /* Centramos las fotos horizontalmente */
+        gap: 10px; /* Espacio entre las fotos */
+        max-width: 1200px; /* Máximo ancho del contenedor */
+        margin: 0 auto; /* Centramos el contenedor en la página */
+    }
+    
+    .descripcion-servicios {
+        text-align: center; /* Centramos el texto */
+        font-size: 1em; /* Tamaño de fuente */
+        line-height: 1.5; /* Altura de línea */
+        color: #000000; /* Color de texto */
+        margin-top: 20px; /* Espacio superior */
+    }
+    
+    .descripcion-servicios img {
+        float: center; /* Alinear la imagen a la izquierda */
+        margin-right: 20px; /* Espacio a la derecha de la imagen */
+    
+    }
+    .titulodescripcion-servicios{
+        text-align: center; /* Centramos el texto */
+        font-size: 25px; /* Tamaño de fuente */
+        line-height: 1.5; /* Altura de línea */
+        color: #000000; /* Color de texto */
+        margin-top: 20px; /* Espacio superior */
+        font-family: "Arial", sans-serif;
+    }
+    .foto {
+        width: 100%; /* Calculamos el ancho de cada foto */
+        overflow: hidden; /* Ocultamos cualquier parte de la imagen que se desborde */
+        border-radius: 10px; /* Añadimos bordes redondeados a las imágenes */
+    }
+    
+    .foto img {
+        width: 100%;
+        max-height: 45rem; /* Hacemos que la imagen ocupe todo el ancho del contenedor */
+        object-fit: cover;
+        transition: transform 0.3s ease; /* Agregamos una transición suave al pasar el mouse sobre la imagen */
+    }
+    
+    .foto:hover img {
+        transform: scale(1.1); /* Aumentamos ligeramente el tamaño de la imagen al pasar el mouse sobre ella */
+    }
+    nav ul li {
+        display: inline; /* Mostramos los elementos de la lista en línea */
+        margin-right: 20px; /* Añasdimos un margen a la derecha entre los elementos */
+        margin-left: 0.2pc;
+        margin-right: 0.2pc;
+    }
+    
+    nav ul li a {
+        text-decoration: none; /* Quitamos la subrayado de los enlaces */
+        color: rgb(0, 0, 0); /* Color del texto */
+        margin-left: 0.2pc;
+        margin-right: 0.2pc;
+    
+        
+    }
+    footer {
+        background-color: #46CAF7; /* Establecemos el color de fondo */
+        padding: 20px; /* Añadimos un poco de espacio interno */
+        text-align: center; /* Centramos el texto */
+        color: black; /* Cambiamos el color del texto para que sea legible */
+        width: 100%; /* Hacemos que el ancho sea del 100% para que ocupe todo el ancho de la ventana */
+        bottom: 0; /* Lo situamos al fondo de la ventana */
+    }
+  }
